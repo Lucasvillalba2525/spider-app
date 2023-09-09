@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { obtenerPokemons } from '../service/pokemonService';
-import Pokemon from './../../../Pokemon/src/components/Pokemon';
-
-
+import Pokemon from './pokemon';
 
 export default function Pokemons() {
     const [pokemons,setPokemons] = useState([]);
