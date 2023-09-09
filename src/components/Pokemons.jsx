@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { obtenerPokemons } from '../service/pokemonService';
-import Pokemon from './pokemon';
+import Pokemon from './../../../Pokemon/src/components/Pokemon';
+
 
 
 export default function Pokemons() {
