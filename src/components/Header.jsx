@@ -1,0 +1,31 @@
+import React from 'react'
+import spiderLogo from '../icons/Spiderverse_hoodie.png';
+import { Link } from 'react-router-dom';
+
+
+export default function Header() {
+    return (
+        <header className="p-3 text-bg-dark">
+            <div className="container">
+                <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <Link to={"/"} className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <img className="bi me-2" width="45" height="45" role="img" aria-label="Bootstrap" src={spiderLogo}/>
+                    </Link>
+
+                    <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><Link to={"/"} className="nav-link px-2 text-secondary">Home</Link></li>
+                        <li><Link to={"/"} className="nav-link px-2 text-white">Features</Link></li>
+                        <li><Link to={"/"} className="nav-link px-2 text-white">Pricing</Link></li>
+                        <li><Link to={"/"} className="nav-link px-2 text-white">FAQs</Link></li>
+                        <li><Link to={"/"} className="nav-link px-2 text-white">About</Link></li>
+                    </ul>
+
+                    <div className="text-end">
+                        <button type="button" className="btn btn-outline-light me-2">Login</button>
+                        <button type="button" className="btn btn-warning">Sign-up</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    )
+}
